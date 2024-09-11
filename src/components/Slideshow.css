@@ -74,3 +74,24 @@
       height: 5px;
     background-color:#f8f8f8;
   }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .seven h1 {
+    font-size: 30px; /* Adjust font size for tablet */
+    grid-template-columns: 1fr max-content 1fr; /* Keep grid layout for tablet */
+    grid-template-rows: 27px 0; /* Keep grid rows for tablet */
+    grid-gap: 15px; /* Adjust gap between elements for tablet */
+  }
+
+
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+  .seven h1 {
+    font-size: 25px; /* Adjust font size for mobile */
+    grid-template-columns: 1fr; /* Stack elements vertically on mobile */
+    grid-template-rows: auto; /* Allow rows to adjust automatically */
+    grid-gap: 10px; /* Adjust gap between elements for mobile */
+    text-align: center; /* Ensure text alignment for mobile */
+  }
