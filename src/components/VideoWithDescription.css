@@ -1,0 +1,96 @@
+/* Container for video and description */
+.video-container {
+  display: flex;
+  flex-direction: row; /* Default to row layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Distribute space between items */
+  gap: 20px; /* Space between video and description */
+  padding: 20px;
+  width: 100%; /* Make container width responsive */
+  max-width: 1100px; /* Set a maximum width */
+  box-sizing: border-box;
+  margin: 0 auto; /* Center container horizontally */
+}
+
+/* Style for the video iframe */
+.video iframe {
+  width: 100%; /* Adjust width to fit container */
+  height: 250px; /* Set a fixed height */
+  border: none;
+  border-radius: 8px;
+  display: block; /* Ensure iframe is a block element */
+}
+
+/* Style for the description */
+.description12 {
+  flex: 1; /* Allow description to take available space */
+  max-width: 100%; /* Ensure description doesn't exceed container width */
+  font-size: 13px; /* Optional: Adjust font size */
+}
+
+.description12 h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.description12 p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-style: italic;
+  color: #333;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 1200px) {
+  .video-container {
+    gap: 15px; /* Adjust gap for smaller screens */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .video-container {
+    flex-direction: column; /* Stack video and description vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 10px;
+  }
+
+  .video iframe {
+    height: 200px; /* Adjust height for smaller screens */
+    max-width: 100%; /* Ensure video scales down properly */
+  }
+
+  .description12 {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    text-align: center; /* Center text in the description */
+  }
+
+  .description12 h2 {
+    font-size: 20px; /* Adjust heading size */
+  }
+
+  .description12 p {
+    font-size: 16px; /* Adjust paragraph size */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .video-container {
+    padding: 10px; /* Reduce padding on very small screens */
+  }
+
+  .video iframe {
+    height: 180px; /* Further adjust iframe height */
+  }
+
+  .description12 {
+    font-size: 11px; /* Adjust font size for very small screens */
+  }
+
+  .description12 h2 {
+    font-size: 18px; /* Adjust heading size */
+  }
+
+  .description12 p {
+    font-size: 14px; /* Adjust paragraph size */
+  }
+}

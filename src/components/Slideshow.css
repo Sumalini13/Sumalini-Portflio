@@ -1,0 +1,76 @@
+.slideshow-container {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+}
+
+.slide {
+  display: flex; /* Use flexbox to align description and image side by side */
+  position: relative;
+  width: 100%;
+}
+
+.slide-description {
+  width: 50%;
+  font-family: 'EB Garamond';
+  color: #fff;
+  text-align: left; /* Align text as desired */
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 50%;
+  margin-top: -150px;
+  height: auto; /* Ensure image maintains aspect ratio */
+  margin-left: 630px; /* Adjust margin for positioning */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .slide {
+    flex-direction: column; /* Stack description and image vertically */
+  }
+
+  .slide-description {
+    width: 100%; /* Make description take full width */
+    font-size: 15px; /* Adjust font size for smaller screens */
+    margin-bottom: 10px; /* Add some space between description and image */
+    text-align: center; /* Center-align text for smaller screens */
+  }
+
+  .slide img {
+    width: 100%; /* Make image take full width */
+    margin-top: 0; /* Remove negative margin */
+    margin-left: 0; /* Remove margin-left */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slide-description {
+    font-size: 13px; /* Further reduce font size for very small screens */
+  }
+}
+
+
+.seven h1 {
+  text-align: center;
+      font-size:35px; font-weight:300; color:#ffffff; letter-spacing:1px;
+       text-transform: uppercase;
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      grid-template-rows: 27px 0;
+      grid-gap: 20px;
+      align-items: center;
+  }
+  
+  .seven h1:after,.seven h1:before {
+      content: " ";
+      display: block;
+      border-bottom: 1px solid #c50000;
+      border-top: 1px solid #c50000;
+      height: 5px;
+    background-color:#f8f8f8;
+  }
