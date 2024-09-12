@@ -85,8 +85,24 @@
     grid-template-rows: 27px 0; /* Keep grid rows for tablet */
     grid-gap: 15px; /* Adjust gap between elements for tablet */
   }
+/* Style for .seven h1 */
+.seven h1:after, .seven h1:before {
+  content: " ";
+  display: block;
+  border-bottom: 1px solid #c50000;
+  border-top: 1px solid #c50000;
+  height: 5px;
+  background-color: #f8f8f8;
+}
 
-
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .seven h1 {
+    font-size: 30px; /* Adjust font size for tablet */
+    grid-template-columns: 1fr max-content 1fr; /* Keep grid layout for tablet */
+    grid-template-rows: 27px 0; /* Keep grid rows for tablet */
+    grid-gap: 15px; /* Adjust gap between elements for tablet */
+  }
 }
 
 /* Mobile view */
@@ -98,6 +114,5 @@
     grid-gap: 10px; /* Adjust gap between elements for mobile */
     text-align: center; /* Ensure text alignment for mobile */
   }
-
-
+}
 }

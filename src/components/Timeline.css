@@ -65,8 +65,14 @@
   .timeline-item:nth-child(even) {
     transform: translateY(30px); /* Moves item down */
   }
+    /* Hide the horizontal line on all screen sizes */
+@media (max-width: 768px) {
+  .line {
+      display: none;
+  }
+}
   
-  /* Hide the horizontal line on all screen sizes */
+/* Hide the horizontal line on all screen sizes */
 @media (max-width: 768px) {
   .line {
       display: none;
