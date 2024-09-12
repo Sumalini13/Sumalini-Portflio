@@ -66,4 +66,9 @@
     transform: translateY(30px); /* Moves item down */
   }
   
-  
+  /* Hide the horizontal line on all screen sizes */
+@media (max-width: 768px) {
+  .line {
+      display: none;
+  }
+}

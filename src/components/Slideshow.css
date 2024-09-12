@@ -55,22 +55,49 @@
 
 
 .seven h1 {
-  text-align: center;
-      font-size:35px; font-weight:300; color:#ffffff; letter-spacing:1px;
-       text-transform: uppercase;
-      margin-top: 10px;
-      display: grid;
-      grid-template-columns: 1fr max-content 1fr;
-      grid-template-rows: 27px 0;
-      grid-gap: 20px;
-      align-items: center;
+    text-align: center;
+        font-size:35px; font-weight:300; color:#ffffff; letter-spacing:1px;
+        text-transform: uppercase;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        grid-template-rows: 27px 0;
+        grid-gap: 20px;
+        align-items: center;
+    }
+    
+    .seven h1:after,.seven h1:before {
+        content: " ";
+        display: block;
+        /* border-bottom: 1px solid #c50000;
+        border-top: 1px solid #c50000; */
+        height: 5px;
+      background-color:#f8f8f8;
+    }
+
+    /* Responsive design for different screen sizes */
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .seven h1 {
+    font-size: 30px; /* Adjust font size for tablet */
+    grid-template-columns: 1fr max-content 1fr; /* Keep grid layout for tablet */
+    grid-template-rows: 27px 0; /* Keep grid rows for tablet */
+    grid-gap: 15px; /* Adjust gap between elements for tablet */
   }
-  
-  .seven h1:after,.seven h1:before {
-      content: " ";
-      display: block;
-      border-bottom: 1px solid #c50000;
-      border-top: 1px solid #c50000;
-      height: 5px;
-    background-color:#f8f8f8;
+
+
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+  .seven h1 {
+    font-size: 25px; /* Adjust font size for mobile */
+    grid-template-columns: 1fr; /* Stack elements vertically on mobile */
+    grid-template-rows: auto; /* Allow rows to adjust automatically */
+    grid-gap: 10px; /* Adjust gap between elements for mobile */
+    text-align: center; /* Ensure text alignment for mobile */
   }
+
+
+}
